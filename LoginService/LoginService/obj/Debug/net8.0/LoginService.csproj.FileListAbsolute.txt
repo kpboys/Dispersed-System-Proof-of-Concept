@@ -1,0 +1,85 @@
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\appsettings.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\LoginService.exe
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\LoginService.deps.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\LoginService.runtimeconfig.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\LoginService.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\LoginService.pdb
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.csproj.AssemblyReference.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.AssemblyInfoInputs.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.AssemblyInfo.cs
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.csproj.CoreCompileInputs.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.sourcelink.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets\msbuild.LoginService.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets\msbuild.build.LoginService.props
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LoginService.props
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LoginService.props
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\scopedcss\bundle\LoginService.styles.css
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginSer.9CA3B6E7.Up2Date
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\refint\LoginService.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.pdb
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.genruntimeconfig.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\obj\Debug\net8.0\ref\LoginService.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\LoginService\LoginService\LoginService\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\appsettings.json
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\LoginService.exe
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\LoginService.deps.json
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\LoginService.runtimeconfig.json
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\LoginService.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\LoginService.pdb
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.csproj.AssemblyReference.cache
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.AssemblyInfoInputs.cache
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.AssemblyInfo.cs
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.csproj.CoreCompileInputs.cache
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.sourcelink.json
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets\msbuild.LoginService.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets\msbuild.build.LoginService.props
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LoginService.props
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LoginService.props
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\scopedcss\bundle\LoginService.styles.css
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginSer.9CA3B6E7.Up2Date
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\refint\LoginService.dll
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.pdb
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\LoginService.genruntimeconfig.cache
+C:\Users\Casper\Desktop\Microservice system\LoginService\LoginService\LoginService\obj\Debug\net8.0\ref\LoginService.dll

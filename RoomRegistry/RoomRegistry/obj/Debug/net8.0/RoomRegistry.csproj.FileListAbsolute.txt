@@ -1,0 +1,84 @@
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\appsettings.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\RoomRegistry.exe
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\RoomRegistry.deps.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\RoomRegistry.runtimeconfig.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\RoomRegistry.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\RoomRegistry.pdb
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.csproj.AssemblyReference.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.AssemblyInfoInputs.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.AssemblyInfo.cs
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.csproj.CoreCompileInputs.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.sourcelink.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets\msbuild.RoomRegistry.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets\msbuild.build.RoomRegistry.props
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RoomRegistry.props
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RoomRegistry.props
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\scopedcss\bundle\RoomRegistry.styles.css
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegi.37C32838.Up2Date
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\refint\RoomRegistry.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.pdb
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.genruntimeconfig.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\ref\RoomRegistry.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\appsettings.json
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\RoomRegistry.exe
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\RoomRegistry.deps.json
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\RoomRegistry.runtimeconfig.json
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\RoomRegistry.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\RoomRegistry.pdb
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.csproj.AssemblyReference.cache
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.AssemblyInfoInputs.cache
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.AssemblyInfo.cs
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.csproj.CoreCompileInputs.cache
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.sourcelink.json
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets\msbuild.RoomRegistry.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets\msbuild.build.RoomRegistry.props
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RoomRegistry.props
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RoomRegistry.props
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\scopedcss\bundle\RoomRegistry.styles.css
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegi.37C32838.Up2Date
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\refint\RoomRegistry.dll
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.pdb
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\RoomRegistry.genruntimeconfig.cache
+C:\Users\Casper\Desktop\Microservice system\RoomRegistry\RoomRegistry\RoomRegistry\obj\Debug\net8.0\ref\RoomRegistry.dll

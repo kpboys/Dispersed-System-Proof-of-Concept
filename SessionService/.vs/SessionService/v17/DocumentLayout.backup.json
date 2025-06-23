@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\sessionservice\\sessionservice\\sessionservice\\controllers\\sessioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|solutionrelative:sessionservice\\controllers\\sessioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8706894C-893D-4928-849A-88B10347AB73}|SessionTest\\SessionTest.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\sessionservice\\sessionservice\\sessiontest\\sessioncontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8706894C-893D-4928-849A-88B10347AB73}|SessionTest\\SessionTest.csproj|solutionrelative:sessiontest\\sessioncontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\sessionservice\\sessionservice\\sessionservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|solutionrelative:sessionservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\sessionservice\\sessionservice\\sessionservice\\sessiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|solutionrelative:sessionservice\\sessiondatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8706894C-893D-4928-849A-88B10347AB73}|SessionTest\\SessionTest.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\sessionservice\\sessionservice\\sessiontest\\consumertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8706894C-893D-4928-849A-88B10347AB73}|SessionTest\\SessionTest.csproj|solutionrelative:sessiontest\\consumertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\sessionservice\\sessionservice\\sessionservice\\consumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|solutionrelative:sessionservice\\consumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\sessionservice\\sessionservice\\sessionservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|solutionrelative:sessionservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\sessionservice\\sessionservice\\sessionservice\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|solutionrelative:sessionservice\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\sessionservice\\sessionservice\\sessionservice\\models\\statusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|solutionrelative:sessionservice\\models\\statusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\sessionservice\\sessionservice\\sessionservice\\models\\userroomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D5751A7-26CD-4919-9AE6-C51C0185668F}|SessionService\\SessionService.csproj|solutionrelative:sessionservice\\models\\userroomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8706894C-893D-4928-849A-88B10347AB73}|SessionTest\\SessionTest.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\sessionservice\\sessionservice\\sessiontest\\publishertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8706894C-893D-4928-849A-88B10347AB73}|SessionTest\\SessionTest.csproj|solutionrelative:sessiontest\\publishertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SessionService\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SessionService\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-25T09:34:56.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SessionController.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Controllers\\SessionController.cs",
+              "RelativeDocumentMoniker": "SessionService\\Controllers\\SessionController.cs",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Controllers\\SessionController.cs",
+              "RelativeToolTip": "SessionService\\Controllers\\SessionController.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAIwDkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T12:51:44.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Models\\StatusDto.cs",
+              "RelativeDocumentMoniker": "SessionService\\Models\\StatusDto.cs",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Models\\StatusDto.cs",
+              "RelativeToolTip": "SessionService\\Models\\StatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T11:57:37.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConsumerTest.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionTest\\ConsumerTest.cs",
+              "RelativeDocumentMoniker": "SessionTest\\ConsumerTest.cs",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionTest\\ConsumerTest.cs",
+              "RelativeToolTip": "SessionTest\\ConsumerTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T10:14:18.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PublisherTest.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionTest\\PublisherTest.cs",
+              "RelativeDocumentMoniker": "SessionTest\\PublisherTest.cs",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionTest\\PublisherTest.cs",
+              "RelativeToolTip": "SessionTest\\PublisherTest.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T09:58:42.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Publisher.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Publisher.cs",
+              "RelativeDocumentMoniker": "SessionService\\Publisher.cs",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Publisher.cs",
+              "RelativeToolTip": "SessionService\\Publisher.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAMwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T09:52:51.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SessionControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionTest\\SessionControllerTest.cs",
+              "RelativeDocumentMoniker": "SessionTest\\SessionControllerTest.cs",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionTest\\SessionControllerTest.cs",
+              "RelativeToolTip": "SessionTest\\SessionControllerTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T09:48:39.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserRoomDto.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Models\\UserRoomDto.cs",
+              "RelativeDocumentMoniker": "SessionService\\Models\\UserRoomDto.cs",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Models\\UserRoomDto.cs",
+              "RelativeToolTip": "SessionService\\Models\\UserRoomDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T09:40:27.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SessionDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\SessionDatabase.cs",
+              "RelativeDocumentMoniker": "SessionService\\SessionDatabase.cs",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\SessionDatabase.cs",
+              "RelativeToolTip": "SessionService\\SessionDatabase.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAD4vyAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T08:30:50.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Program.cs",
+              "RelativeDocumentMoniker": "SessionService\\Program.cs",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Program.cs",
+              "RelativeToolTip": "SessionService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T12:02:38.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Consumer.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Consumer.cs",
+              "RelativeDocumentMoniker": "SessionService\\Consumer.cs",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\SessionService\\SessionService\\SessionService\\Consumer.cs",
+              "RelativeToolTip": "SessionService\\Consumer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T09:30:08.8Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

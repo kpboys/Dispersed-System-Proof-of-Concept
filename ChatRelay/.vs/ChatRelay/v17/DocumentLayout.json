@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\ChatRelay\\ChatRelay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{77354332-791B-4E72-9263-6B6DDCC9459A}|ChatRelay\\ChatRelay.csproj|c:\\users\\casper\\onedrive\\dania\\systemintegration\\eksamensprojekt\\chatrelay\\chatrelay\\chatrelay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77354332-791B-4E72-9263-6B6DDCC9459A}|ChatRelay\\ChatRelay.csproj|solutionrelative:chatrelay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{320fd13f-632f-4b16-9527-a1adfe555f6c}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\ChatRelay\\ChatRelay\\ChatRelay\\Program.cs",
+              "RelativeDocumentMoniker": "ChatRelay\\Program.cs",
+              "ToolTip": "C:\\Users\\Casper\\OneDrive\\Dania\\Systemintegration\\EksamensProjekt\\ChatRelay\\ChatRelay\\ChatRelay\\Program.cs",
+              "RelativeToolTip": "ChatRelay\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T11:25:22.243Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

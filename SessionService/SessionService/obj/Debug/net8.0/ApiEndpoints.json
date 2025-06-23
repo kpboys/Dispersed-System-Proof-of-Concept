@@ -1,0 +1,130 @@
+[
+  {
+    "ContainingType": "SessionService.Controllers.SessionController",
+    "Method": "CheckSessionId",
+    "RelativePath": "api/checksessionid",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "checkDto",
+        "Type": "SessionService.Models.IdCheckDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SessionService.Controllers.SessionController",
+    "Method": "EndSession",
+    "RelativePath": "api/endsession",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientInput",
+        "Type": "SessionService.Models.UsernameDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SessionService.Controllers.SessionController",
+    "Method": "GetUserRoom",
+    "RelativePath": "api/getuserroom/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SessionService.Controllers.SessionController",
+    "Method": "GetUsersInRoom",
+    "RelativePath": "api/getusersinroom/{room}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "room",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SessionService.Controllers.SessionController",
+    "Method": "GetUsersInRoomWithUser",
+    "RelativePath": "api/getusersinroomwithuser/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SessionService.Controllers.SessionController",
+    "Method": "GetUserState",
+    "RelativePath": "api/getuserstate/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SessionService.Controllers.SessionController",
+    "Method": "IsUserOnline",
+    "RelativePath": "api/isuseronline",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientInput",
+        "Type": "SessionService.Models.UsernameDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SessionService.Controllers.SessionController",
+    "Method": "StartSession",
+    "RelativePath": "api/startsession",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientInput",
+        "Type": "SessionService.Models.UsernameDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

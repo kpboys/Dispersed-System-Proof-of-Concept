@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatRelay", "ChatRelay\ChatRelay.csproj", "{77354332-791B-4E72-9263-6B6DDCC9459A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{16D34982-A908-49A2-8E38-F0423E2AF39C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77354332-791B-4E72-9263-6B6DDCC9459A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77354332-791B-4E72-9263-6B6DDCC9459A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77354332-791B-4E72-9263-6B6DDCC9459A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77354332-791B-4E72-9263-6B6DDCC9459A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16D34982-A908-49A2-8E38-F0423E2AF39C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16D34982-A908-49A2-8E38-F0423E2AF39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16D34982-A908-49A2-8E38-F0423E2AF39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16D34982-A908-49A2-8E38-F0423E2AF39C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {558F92C9-2820-491D-96C3-B173411785F1}
+	EndGlobalSection
+EndGlobal

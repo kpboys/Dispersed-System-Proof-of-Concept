@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  chatservice:
+    image: chatservice
+    build:
+      context: .
+      dockerfile: ChatService/Dockerfile
+  rabbit:
+    image: rabbitmq:latest
+    environment:
+      RABBITMQ_DEFAULT_USER: myuser
+      RABBITMQ_DEFAULT_PASS: mypassword

@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  chatrelay:
+    image: chatrelay
+    build:
+      context: .
+      dockerfile: ChatRelay/Dockerfile
+    ports:
+    - "6800:6800"
+    depends_on: 
+    - rabbit
+  chatservice:
+    image: chatservice:latest
+    depends_on:
+    - rabbit
+  rabbit:
+    image: rabbitmq:latest
+    environment:
+      RABBITMQ_DEFAULT_USER: myuser
+      RABBITMQ_DEFAULT_PASS: mypassword

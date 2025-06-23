@@ -1,0 +1,249 @@
+﻿using LoginService.Interfaces;
+using LoginService.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Net.Http.Headers;
+using System.Security.Claims;
+using System.Text;
+using System.Text.Json;
+
+namespace LoginService.Controllers
+{
+    [Route("api")]
+    [ApiController]
+    public class LoginController : ControllerBase
+    {
+
+        private IUserDatabase database;
+
+        private readonly string startSessionRoute;
+        private readonly string endSessionRoute;
+
+        private readonly HttpMessageHandler? handler;
+
+        public LoginController(IUserDatabase database, HttpMessageHandler? handler = null)
+        {
+            this.database = database;
+
+            string? sessionServiceUrl = Environment.GetEnvironmentVariable("SERVICE_ALIAS_SESSION");
+            string startSessionPath = "api/startsession";
+            startSessionRoute = sessionServiceUrl + startSessionPath;
+
+            string endSessionPath = "api/endsession";
+            endSessionRoute = sessionServiceUrl + endSessionPath;
+
+            if (handler != null)
+                this.handler = handler;
+        }
+
+        [HttpPost("login")]
+        public async Task<ActionResult> Login([FromBody] UserDto clientInput)
+        {
+            User? user = database.FindUser(clientInput);
+            if (user == null)
+                return Unauthorized("Wrong username/password");
+
+            using var client = handler != null ? new HttpClient(handler) : new HttpClient();//Necessary for handler injection
+            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, startSessionRoute);
+            request.Content = CreateJson(new UsernameDto() { Username = user.Username });
+            HttpResponseMessage? response = null;
+            try
+            {
+                response = await client.SendAsync(request);
+            }
+            catch (Exception)
+            {
+                return Problem("Session service unavailable.", null, 503);
+            }
+
+            if ((int)response.StatusCode == 201)
+            {
+                SessionIdDto? session = await GetJson<SessionIdDto>(response);
+                if (session == null || session.SessionId == null)
+                    throw new NullReferenceException("SessionService returned wrong object.");
+                string token = CreateToken(user.Username, session.SessionId, user.IsAdmin ? "admin" : null);
+                return Ok(token);
+            }
+            else if ((int)response.StatusCode == 409)
+                return Conflict("Already logged in");
+            else
+<<<<<<< HEAD
+                throw new Exception("Status code not recognized." + (int)response.StatusCode);
+=======
+                throw new Exception("Status code not recognized.");
+>>>>>>> origin/tempDevelop
+        }
+
+        [HttpPost("logout"), Authorize]
+        public ActionResult Logout()
+        {
+            string? authorizationHeader = HttpContext.Request.Headers["Authorization"];
+            if (string.IsNullOrEmpty(authorizationHeader) || !authorizationHeader.StartsWith("Bearer "))
+                return Unauthorized("Bad token.");
+            string token = authorizationHeader.Replace("Bearer ", "");
+
+            if (HttpContext.User == null || HttpContext.User.Identity == null)
+                return Unauthorized("Identity not found.");
+            ClaimsIdentity? identity = HttpContext.User.Identity as ClaimsIdentity;
+
+            Claim? nameClaim = identity.FindFirst(ClaimTypes.Name);
+            if (nameClaim == null)
+                return Unauthorized("Name claim not found.");
+
+            UsernameDto usernameDto = new UsernameDto() { Username = nameClaim.Value };
+            User? user = database.GetUserByUsername(usernameDto.Username);
+            if (user == null)
+                return NotFound("User not found.");
+
+            using var client = handler != null ? new HttpClient(handler) : new HttpClient();//Necessary for handler injection
+            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, endSessionRoute);
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            request.Content = CreateJson(usernameDto);
+            client.SendAsync(request);
+
+            return Ok();
+        }
+
+        [HttpPost("register")]
+        public ActionResult Register([FromBody] RegisterDTO clientInput)
+        {
+            string email = clientInput.Email;
+            string username = clientInput.Username;
+            string password = clientInput.Password;
+
+            if (!IsEmailValid(email))
+                return Unauthorized("Invalid email");
+            if (!IsEmailFree(email))
+                return Conflict("Email already taken");
+
+            if (!IsUsernameValid(username))
+                return Unauthorized("Invalid username");
+            if (!IsUsernameFree(username))
+                return Conflict("Username already taken");
+
+            if (!IsPasswordValid(password))
+                return Unauthorized("Password invalid");
+
+            User newUser = CreateUser(email, username, password);
+            database.AddUser(newUser);
+
+<<<<<<< HEAD
+            //Created() being empty makes something without a status code
+            return Created("somewhere", newUser);
+=======
+            return Created();
+>>>>>>> origin/tempDevelop
+        }
+
+        #region Register methods
+        private User CreateUser(string email, string username, string password, bool admin = false)
+        {
+            User user = new User()
+            {
+                Email = email,
+                Username = username,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(password),
+                IsAdmin = admin
+            };
+            return user;
+        }
+
+        private bool IsEmailValid(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email) || !email.Contains('@') || !email.Contains('.'))
+                return false;
+            else
+                return true;
+        }
+
+        private bool IsEmailFree(string email)
+        {
+            User? user = database.GetUserByEmail(email);
+            if (user == null)
+                return true;
+            else
+                return false;
+        }
+
+        private bool IsUsernameValid(string username)
+        {
+            if (string.IsNullOrWhiteSpace(username))
+                return false;
+            else
+                return true;
+        }
+
+        private bool IsUsernameFree(string username)
+        {
+            User? user = database.GetUserByUsername(username);
+            if (user == null)
+                return true;
+            else
+                return false;
+        }
+
+        private bool IsPasswordValid(string password)
+        {
+            if (string.IsNullOrWhiteSpace(password))
+                return false;
+            else
+                return true;
+        }
+        #endregion
+
+        private string CreateToken(string username, string sessionId, string? role = null)
+        {
+            List<Claim> claims = new List<Claim>();
+            claims.Add(new Claim(ClaimTypes.Name, username));
+            claims.Add(new Claim(ClaimTypes.NameIdentifier, sessionId));
+            if (role != null)
+                claims.Add(new Claim(ClaimTypes.Role, role));
+
+            string? secret = Environment.GetEnvironmentVariable("JWT_SECRET_KEY");
+            if (secret == null)
+                throw new NullReferenceException("Secret key is null!");
+            else if (secret.Length < 64)
+                throw new Exception("Secret key is too short: Minimum 64 characters.");
+
+            SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret));
+
+            SigningCredentials creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+
+            JwtSecurityToken token = new JwtSecurityToken(
+                //issuer: "TestIssuer",
+                //audience: "TestAudience",
+                claims: claims,
+                expires: DateTime.Now.AddHours(1),
+                signingCredentials: creds);
+
+            string jwt = new JwtSecurityTokenHandler().WriteToken(token);
+            return jwt;
+        }
+
+        private async Task<T?> GetJson<T>(HttpResponseMessage responseMessage)
+        {
+            string? jsonString = await responseMessage.Content.ReadAsStringAsync();
+            try
+            {
+                return JsonSerializer.Deserialize<T>(jsonString);
+            }
+            catch (JsonException)
+            {
+                return default;
+            }
+        }
+
+        private StringContent CreateJson(object jsonObject)
+        {
+            string jsonString = JsonSerializer.Serialize(jsonObject);
+<<<<<<< HEAD
+            return new StringContent(jsonString, encoding: Encoding.UTF8, "application/json");
+=======
+            return new StringContent(jsonString);
+>>>>>>> origin/tempDevelop
+        }
+
+    }
+}

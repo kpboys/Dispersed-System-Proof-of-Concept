@@ -1,0 +1,19 @@
+name: dockercompose1748136218882205370
+services:
+  chatservice:
+    build:
+      context: C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatService\ChatService
+      dockerfile: ChatService/Dockerfile
+    image: chatservice
+    networks:
+      default: null
+  rabbit:
+    environment:
+      RABBITMQ_DEFAULT_PASS: mypassword
+      RABBITMQ_DEFAULT_USER: myuser
+    image: rabbitmq:latest
+    networks:
+      default: null
+networks:
+  default:
+    name: dockercompose1748136218882205370_default

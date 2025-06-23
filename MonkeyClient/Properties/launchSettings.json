@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MonkeyClient": {
+      "commandName": "Project",
+      "commandLineArgs": "Peter"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+name: dockercompose7311914058881411306
+services:
+  chatrelay:
+    build:
+      context: C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay
+      dockerfile: ChatRelay/Dockerfile
+    depends_on:
+      rabbit:
+        condition: service_started
+        required: true
+    image: chatrelay
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 6800
+        published: "6800"
+        protocol: tcp
+  chatservice:
+    depends_on:
+      rabbit:
+        condition: service_started
+        required: true
+    image: chatservice:latest
+    networks:
+      default: null
+  rabbit:
+    environment:
+      RABBITMQ_DEFAULT_PASS: mypassword
+      RABBITMQ_DEFAULT_USER: myuser
+    image: rabbitmq:latest
+    networks:
+      default: null
+networks:
+  default:
+    name: dockercompose7311914058881411306_default

@@ -1,0 +1,479 @@
+using LoginService;
+using LoginService.Controllers;
+using LoginService.Interfaces;
+using LoginService.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Moq;
+using Moq.Protected;
+using Newtonsoft.Json;
+using System.Net;
+using System.Security.Claims;
+
+namespace LoginTest
+{
+    [TestClass]
+    public class LoginControllerTest
+    {
+
+        private LoginController loginController;
+
+        private Mock<HttpMessageHandler> mockHandler;
+        private Mock<HttpContext> mockContext;
+        private Mock<HttpRequest> mockRequest;
+
+        private Mock<IUserDatabase> mockDatabase;
+        private List<User> mockUsers;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+#if DEBUG
+            DevelopEnvLoader.Load("develop.env");
+#endif
+
+            mockHandler = new Mock<HttpMessageHandler>(MockBehavior.Loose);
+
+            mockUsers = new List<User>();
+            mockDatabase = new Mock<IUserDatabase>();
+            mockDatabase.Setup(db => db.AddUser(It.IsAny<User>())).Callback<User>(user => mockUsers.Add(user));
+            mockDatabase.Setup(db => db.RemoveUser(It.IsAny<User>())).Callback<User>(users => mockUsers.Remove(users));
+            mockDatabase.Setup(db => db.GetUserByUsername(It.IsAny<string>())).Returns<string>(username => mockUsers.Find(u => u.Username == username));
+            mockDatabase.Setup(db => db.GetUserByEmail(It.IsAny<string>())).Returns<string>(email => mockUsers.Find(u => u.Email == email));
+            mockDatabase.Setup(db => db.FindUser(It.IsAny<UserDto>())).Returns<UserDto>(userDto => mockUsers.Find(u => u.Username == userDto.Username && BCrypt.Net.BCrypt.Verify(userDto.Password, u.PasswordHash)));
+
+            loginController = new LoginController(mockDatabase.Object, mockHandler.Object);
+
+            mockContext = new Mock<HttpContext>();
+            mockRequest = new Mock<HttpRequest>();
+            mockContext.Setup(x => x.Request).Returns(mockRequest.Object);
+
+            loginController.ControllerContext = new ControllerContext() { HttpContext = mockContext.Object };
+
+            RegisterDTO user1 = new RegisterDTO() { Email = "joke@gmail.rus", Username = "Hans495", Password = "qwtrgeo53tv" };
+            RegisterDTO user2 = new RegisterDTO() { Email = "helloworld@hotmail.com", Username = "Lina_AA9", Password = "bgffj5y6784r" };
+            RegisterDTO user3 = new RegisterDTO() { Email = "superman@justice.league.com", Username = "Klark", Password = "super123" };
+            string passHash = BCrypt.Net.BCrypt.HashPassword("admin123");
+            User admin = new User() { Email = "admin@test.com", Username = "admin", PasswordHash = passHash, IsAdmin = true };
+            mockDatabase.Object.AddUser(admin);
+            loginController.Register(user1);
+            loginController.Register(user2);
+            loginController.Register(user3);
+        }
+
+        #region Register tests
+        [TestMethod]
+        [DataRow("test@test.com", "TestJoe", "123")]
+        [DataRow("eyo@blargh.dk", "TryJane", "321")]
+        public void RegisterSuccess(string email, string username, string password)
+        {
+            //Arrange
+            RegisterDTO dto = new RegisterDTO() { Email = email, Username = username, Password = password };
+            CreatedResult expectedType = new CreatedResult();
+
+            //Act
+            var response = loginController.Register(dto);
+
+            //Assert
+            Assert.IsInstanceOfType(response, expectedType.GetType());
+        }
+
+        [TestMethod]
+        public void RegisterEmailTaken()
+        {
+            //Arrange
+            string email = "test@test.com";
+            RegisterDTO registeredUser = new RegisterDTO() { Email = email, Username = "username", Password = "password" };
+            Type expectedType = new CreatedResult().GetType();
+
+            RegisterDTO dto = new RegisterDTO() { Email = email, Username = "test", Password = "123" };
+
+            //Act
+            var firstResponse = loginController.Register(registeredUser);
+            var secondResponse = loginController.Register(dto);
+
+            //Assert
+            Assert.IsNotNull(firstResponse);
+            Assert.IsInstanceOfType(firstResponse, expectedType);
+            AssertObjectResponse<ConflictObjectResult>(secondResponse, 409, "Email already taken");
+        }
+
+        [TestMethod]
+        [DataRow("test")]
+        [DataRow("")]
+        [DataRow(null)]
+        [DataRow("   ")]
+        [DataRow("test@testo")]
+        [DataRow("testtesto.com")]
+        public void RegisterBadEmail(string email)
+        {
+            //Arrange
+            RegisterDTO dto = new RegisterDTO() { Email = email, Username = "username", Password = "password" };
+
+            //Act
+            var response = loginController.Register(dto);
+
+            //Assert
+            AssertObjectResponse<UnauthorizedObjectResult>(response, 401, "Invalid email");
+        }
+
+        [TestMethod]
+        public void RegisterUsernameTaken()
+        {
+            //Arrange
+            string username = "test";
+            RegisterDTO registeredUser = new RegisterDTO() { Email = "test1@test.com", Username = username, Password = "password" };
+            Type expectedType = new CreatedResult().GetType();
+
+            RegisterDTO dto = new RegisterDTO() { Email = "test2@test.com", Username = username, Password = "123" };
+
+            //Act
+            var firstResponse = loginController.Register(registeredUser);
+            var secondResponse = loginController.Register(dto);
+
+            //Assert
+            Assert.IsNotNull(firstResponse);
+            Assert.IsInstanceOfType(firstResponse, expectedType);
+            AssertObjectResponse<ConflictObjectResult>(secondResponse, 409, "Username already taken");
+        }
+
+        [TestMethod]
+        [DataRow("")]
+        [DataRow("   ")]
+        [DataRow(null)]
+        public void RegisterBadUsername(string username)
+        {
+            //Arrange
+            RegisterDTO dto = new RegisterDTO() { Email = "test@test.com", Username = username, Password = "password" };
+
+            //Act
+            var response = loginController.Register(dto);
+
+            //Assert
+            AssertObjectResponse<UnauthorizedObjectResult>(response, 401, "Invalid username");
+        }
+
+        [TestMethod]
+        [DataRow("")]
+        [DataRow("  ")]
+        [DataRow(null)]
+        public void RegisterBadPassword(string password)
+        {
+            //Arrange
+            RegisterDTO dto = new RegisterDTO() { Email = "test@test.com", Username = "username", Password = password };
+
+            //Act
+            var response = loginController.Register(dto);
+
+            //Assert
+            AssertObjectResponse<UnauthorizedObjectResult>(response, 401, "Password invalid");
+        }
+
+        #endregion
+
+        #region Login tests
+        [TestMethod]
+        public async Task LoginSuccess()
+        {
+            //Arrange
+            UserDto user = new UserDto() { Username = "Hans495", Password = "qwtrgeo53tv" };
+            int expectedStatusCode = 200;
+            Uri expectedUri = new Uri("https://localhost:12012/api/startsession");
+            SessionIdDto contentDto = new SessionIdDto() { SessionId = "testId" };
+
+            mockHandler.Protected().Setup<Task<HttpResponseMessage>>
+                (
+                    "SendAsync",
+                    ItExpr.IsAny<HttpRequestMessage>(),
+                    ItExpr.IsAny<CancellationToken>()
+                )
+                .ReturnsAsync(new HttpResponseMessage()
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    Content = new StringContent(JsonConvert.SerializeObject(contentDto)),
+                })
+                .Verifiable();
+
+            var response = await loginController.Login(user);
+            var objectResult = response as OkObjectResult;
+
+            //Assert
+            AssertObjectResponse<OkObjectResult>(response, expectedStatusCode);
+        }
+
+        [TestMethod]
+        public async Task LoginSuccessAsAdmin()
+        {
+            UserDto user = new UserDto() { Username = "admin", Password = "admin123" };
+            int expectedStatusCode = 200;
+            Uri expectedUri = new Uri("https://localhost:12012/api/startsession");
+            SessionIdDto contentDto = new SessionIdDto() { SessionId = "testId" };
+
+            mockHandler.Protected().Setup<Task<HttpResponseMessage>>
+                (
+                    "SendAsync",
+                    ItExpr.IsAny<HttpRequestMessage>(),
+                    ItExpr.IsAny<CancellationToken>()
+                )
+                .ReturnsAsync(new HttpResponseMessage()
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    Content = new StringContent(JsonConvert.SerializeObject(contentDto)),
+                })
+                .Verifiable();
+
+            var response = await loginController.Login(user);
+            var objectResult = response as OkObjectResult;
+
+            //Assert
+            AssertObjectResponse<OkObjectResult>(response, expectedStatusCode);
+        }
+
+        [TestMethod]
+        [DataRow("WrongUsername")]
+        public async Task LoginWrongUsername(string username)
+        {
+            //Arrange
+            UserDto user = new UserDto() { Username = username, Password = "qwtrgeo53tv" };
+            int expectedStatusCode = 401;
+
+            //Act
+            var response = await loginController.Login(user);
+
+            //Assert
+            AssertObjectResponse<UnauthorizedObjectResult>(response, expectedStatusCode, "Wrong username/password");
+        }
+
+        [TestMethod]
+        [DataRow("WrongPassword")]
+        public async Task LoginWrongPassword(string password)
+        {
+            //Arrange
+            UserDto user = new UserDto() { Username = "Hans495", Password = password };
+            int expectedStatusCode = 401;
+
+            //Act
+            var response = await loginController.Login(user);
+
+            //Assert
+            AssertObjectResponse<UnauthorizedObjectResult>(response, expectedStatusCode, "Wrong username/password");
+        }
+
+        [TestMethod]
+        public async Task LoginAlreadyLoggedIn()
+        {
+            //Arrange
+            UserDto user = new UserDto() { Username = "Hans495", Password = "qwtrgeo53tv" };
+            int expectedStatusCode = 409;
+            Uri expectedUri = new Uri("https://localhost:12012/api/startsession");
+
+            mockHandler.Protected().Setup<Task<HttpResponseMessage>>
+                (
+                    "SendAsync",
+                    ItExpr.IsAny<HttpRequestMessage>(),
+                    ItExpr.IsAny<CancellationToken>()
+                )
+                .ReturnsAsync(new HttpResponseMessage()
+                {
+                    StatusCode = HttpStatusCode.Conflict,
+                })
+                .Verifiable();
+
+            var response = await loginController.Login(user);
+            var objectResult = response as OkObjectResult;
+
+            //Assert
+            AssertObjectResponse<ConflictObjectResult>(response, expectedStatusCode, "Already logged in");
+        }
+
+        [TestMethod]
+        public async Task LoginSessionServiceUnavailable()
+        {
+            //Arrange
+            UserDto user = new UserDto() { Username = "Hans495", Password = "qwtrgeo53tv" };
+            int expectedStatusCode = 503;
+            Uri expectedUri = new Uri("https://localhost:12012/api/startsession");
+            SessionIdDto contentDto = new SessionIdDto() { SessionId = "testId" };
+
+            //Act
+            var response = await loginController.Login(user);
+            var objectResult = response as ObjectResult;
+
+            //Assert
+            AssertObjectResponse<ObjectResult>(response, expectedStatusCode);
+        }
+
+        [TestMethod]
+        public async Task LoginSessionServiceWrongReturnObject()
+        {
+            string expectedMessage = "SessionService returned wrong object.";
+            UserDto user = new UserDto() { Username = "Hans495", Password = "qwtrgeo53tv" };
+            RegisterDTO wrongObject = new RegisterDTO() { Email = "C", Username = "A", Password = "B" };
+            Uri expectedUri = new Uri("https://localhost:12012/api/startsession");
+
+            mockHandler.Protected().Setup<Task<HttpResponseMessage>>
+                (
+                    "SendAsync",
+                    ItExpr.IsAny<HttpRequestMessage>(),
+                    ItExpr.IsAny<CancellationToken>()
+                )
+                .ReturnsAsync(new HttpResponseMessage()
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    Content = new StringContent(JsonConvert.SerializeObject(wrongObject)),
+                })
+                .Verifiable();
+
+            var exception = await Assert.ThrowsExceptionAsync<NullReferenceException>(() => loginController.Login(user));
+            Assert.IsNotNull(exception);
+            Assert.AreEqual(expectedMessage, exception.Message);
+        }
+
+        [TestMethod]
+        public async Task LoginSessionServiceWrongReturnStatusCode()
+        {
+            string expectedMessage = "Status code not recognized.306";
+            UserDto user = new UserDto() { Username = "Hans495", Password = "qwtrgeo53tv" };
+            SessionIdDto contentDto = new SessionIdDto() { SessionId = "testId" };
+            Uri expectedUri = new Uri("https://localhost:12012/api/startsession");
+
+            mockHandler.Protected().Setup<Task<HttpResponseMessage>>
+                (
+                    "SendAsync",
+                    ItExpr.IsAny<HttpRequestMessage>(),
+                    ItExpr.IsAny<CancellationToken>()
+                )
+                .ReturnsAsync(new HttpResponseMessage()
+                {
+                    StatusCode = HttpStatusCode.Unused,
+                    Content = new StringContent(JsonConvert.SerializeObject(contentDto)),
+                })
+                .Verifiable();
+
+            var exception = await Assert.ThrowsExceptionAsync<Exception>(() => loginController.Login(user));
+            Assert.IsNotNull(exception);
+            Assert.AreEqual(expectedMessage, exception.Message);
+        }
+
+        #endregion
+
+        #region Logout tests
+
+        [TestMethod]
+        public async Task LogoutSuccess()
+        {
+            //Arrange
+            mockRequest.Setup(x => x.Headers["Authorization"]).Returns("Bearer valid_token");//Mocking the token
+            ClaimsIdentity claimsIdentity = new ClaimsIdentity(new[]
+            {
+                new Claim(ClaimTypes.Name, "Hans495")
+            });
+            ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+            mockContext.Setup(x => x.User).Returns(claimsPrincipal);//Mocking the name claim
+
+            //Act
+            var response = await loginController.Logout();
+
+            //Assert
+            AssertStatusResponse<OkResult>(response, 200);
+        }
+
+        [TestMethod]
+        [DataRow("")]
+        [DataRow("   ")]
+        [DataRow(null)]
+        public async Task LogoutBadToken(string token)
+        {
+            //Arrange
+            int expectedStatusCode = 401;
+            string expectedValue = "Bad token.";
+            mockRequest.Setup(x => x.Headers["Authorization"]).Returns(token);//Mocking the token
+
+            //Act
+            var response = await loginController.Logout();
+
+            //Assert
+            AssertObjectResponse<UnauthorizedObjectResult>(response, expectedStatusCode, expectedValue);
+        }
+
+        [TestMethod]
+        public async Task LogoutUserNotFound()
+        {
+            //Arrange
+            string expectedValue = "User not found.";
+            int expectedStatusCode = 404;
+            string username = "WrongHans";
+
+            mockRequest.Setup(x => x.Headers["Authorization"]).Returns("Bearer valid_token");//Mocking the token
+            ClaimsIdentity claimsIdentity = new ClaimsIdentity(new[]
+            {
+                new Claim(ClaimTypes.Name, username)
+            });
+            ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+            mockContext.Setup(x => x.User).Returns(claimsPrincipal);//Mocking the name claim
+
+            //Act
+            var response = await loginController.Logout();
+
+            //Assert
+            AssertObjectResponse<NotFoundObjectResult>(response, expectedStatusCode, expectedValue);
+        }
+
+        [TestMethod]
+        public async Task LogoutIdentityNotFoundAsync()
+        {
+            //Arrange
+            string expectedMessage = "Identity not found.";
+            int expectedStatusCode = 401;
+
+            mockRequest.Setup(x => x.Headers["Authorization"]).Returns("Bearer valid_token");//Mocking the token
+
+            //Act
+            var response = await loginController.Logout();
+
+            //Assert
+            AssertObjectResponse<UnauthorizedObjectResult>(response, expectedStatusCode, expectedMessage);
+        }
+
+        [TestMethod]
+        public async Task LogoutNameClaimNotFoundAsync()
+        {
+            //Arrange
+            string expectedMessage = "Name claim not found.";
+            int expectedStatusCode = 401;
+
+            mockRequest.Setup(x => x.Headers["Authorization"]).Returns("Bearer valid_token");//Mocking the token
+            ClaimsIdentity claimsIdentity = new ClaimsIdentity();
+            ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+            mockContext.Setup(x => x.User).Returns(claimsPrincipal);//Mocking the name claim
+
+            //Act
+            var response = await loginController.Logout();
+
+            //Assert
+            AssertObjectResponse<UnauthorizedObjectResult>(response, expectedStatusCode, expectedMessage);
+        }
+
+        #endregion
+
+        private void AssertObjectResponse<T>(ActionResult actual, int expectedStatusCode, object? expectedValue = null) where T : ObjectResult
+        {
+            Assert.IsNotNull(actual);
+            T? objectResult = actual as T;
+            Assert.IsNotNull(objectResult);
+            Assert.AreEqual(expectedStatusCode, objectResult.StatusCode);
+
+            if (expectedValue != null)
+                Assert.AreEqual(expectedValue, objectResult.Value);
+        }
+
+        private void AssertStatusResponse<T>(ActionResult actual, int expectedStatusCode) where T : StatusCodeResult
+        {
+            Assert.IsNotNull(actual);
+            T? statusResult = actual as T;
+            Assert.IsNotNull(statusResult);
+            Assert.AreEqual(expectedStatusCode, statusResult.StatusCode);
+        }
+
+    }
+}

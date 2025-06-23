@@ -1,0 +1,15 @@
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\bin\Debug\net8.0\ChatRelay.exe
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\bin\Debug\net8.0\ChatRelay.deps.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\bin\Debug\net8.0\ChatRelay.runtimeconfig.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\bin\Debug\net8.0\ChatRelay.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\bin\Debug\net8.0\ChatRelay.pdb
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\obj\Debug\net8.0\ChatRelay.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\obj\Debug\net8.0\ChatRelay.AssemblyInfoInputs.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\obj\Debug\net8.0\ChatRelay.AssemblyInfo.cs
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\obj\Debug\net8.0\ChatRelay.csproj.CoreCompileInputs.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\obj\Debug\net8.0\ChatRelay.sourcelink.json
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\obj\Debug\net8.0\ChatRelay.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\obj\Debug\net8.0\refint\ChatRelay.dll
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\obj\Debug\net8.0\ChatRelay.pdb
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\obj\Debug\net8.0\ChatRelay.genruntimeconfig.cache
+C:\Users\Casper\OneDrive\Dania\Systemintegration\EksamensProjekt\ChatRelay\ChatRelay\ChatRelay\obj\Debug\net8.0\ref\ChatRelay.dll

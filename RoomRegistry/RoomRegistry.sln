@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomRegistry", "RoomRegistry\RoomRegistry.csproj", "{38099C36-25A2-4321-940A-56E91339E91E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38099C36-25A2-4321-940A-56E91339E91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38099C36-25A2-4321-940A-56E91339E91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38099C36-25A2-4321-940A-56E91339E91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38099C36-25A2-4321-940A-56E91339E91E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FC5D2BC-E315-4E89-9198-052DC48B926A}
+	EndGlobalSection
+EndGlobal
